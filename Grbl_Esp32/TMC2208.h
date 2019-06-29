@@ -1,8 +1,9 @@
 /*
-	TMC2130.h - Support for TMC2130 Stepper Drivers SPI Mode
+	TMC2208.h - Support for TMC2208 Stepper Drivers SPI Mode
   Part of Grbl_ESP32  
 
   Copyright (c) 2019 Barton Dring for Buildlog.net LLC   	
+  TMC2208 support (c) 2019 Wolfgang Lienbacher
 
   GrblESP32 is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -18,14 +19,14 @@
   along with Grbl.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef TMC2130_h
-	#define TMC2130_h
+#ifndef TMC2208_h
+	#define TMC2208_h
 
 #include "grbl.h"
 #include <TMCStepper.h>
 
-#ifdef USE_TMC2130
-	void TMC2130_Init();
+#ifdef USE_TMC2208
+	void TMC2208_Init();
 #endif
 
 #endif

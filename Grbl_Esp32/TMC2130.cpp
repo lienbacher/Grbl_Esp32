@@ -38,21 +38,21 @@ void TMC2130_Init()
 		#ifdef X_CS_PIN
 			TMC2130_X.begin(); // Initiate pins and registries
 			TMC2130_X.microsteps(32);
-			TMC2130_X.setCurrent(200, 0.11, 0.5);
-			TMC2130_X.stealthChop(1); // Enable extremely quiet stepping			
+			TMC2130_X.rms_current(200);
+			TMC2130_X.en_pwm_mode(true); // Enable extremely quiet stepping			
 		#endif	
 		
 		#ifdef Y_CS_PIN
 			TMC2130_Y.begin(); // Initiate pins and registries
 			TMC2130_Y.microsteps(32);
-			TMC2130_Y.setCurrent(200, 0.11, 0.5);
-			TMC2130_Y.stealthChop(1); // Enable extremely quiet stepping
+			TMC2130_Y.rms_current(200);
+			TMC2130_Y.en_pwm_mode(true); // Enable extremely quiet stepping		
 		#endif
 		
 		#ifdef Z_CS_PIN
 			TMC2130_Z.begin(); // Initiate pins and registries
 			TMC2130_Z.microsteps(32);
-			TMC2130_Z.setCurrent(200, 0.11, 0.5);
-			TMC2130_Z.stealthChop(1); // Enable extremely quiet stepping
+			TMC2130_Z.rms_current(200);
+			TMC2130_Z.en_pwm_mode(true); // Enable extremely quiet stepping		
 		#endif
 }

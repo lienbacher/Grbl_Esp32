@@ -88,3 +88,7 @@
 	#include "TMC2130.h" // https://github.com/teemuatlut/TMC2130Stepper
 #endif
 
+#ifdef USE_TMC2208
+	#include "TMC2208.h" // https://github.com/teemuatlut/TMCStepper
+#endif
+
